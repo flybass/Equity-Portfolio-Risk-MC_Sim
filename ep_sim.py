@@ -14,7 +14,7 @@ class ep_risk:
         self.port= folio_dict
 
     memo = Memoizer({})
-    #caches the last data pull for up to 60 seconds
+    #caches the data pulls for up to 60 seconds
     @memo(max_age=60)
     def get_data(self, end_date = "01/15/15", window_length = 700):
         last_date = datetime.datetime.strptime(end_date, "%x")
