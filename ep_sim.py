@@ -9,7 +9,6 @@ from memoize import Memoizer
 
 class ep_risk:
     #example folio_dict: {’JNJ’:10**6, ’AMGN’:10**6, ’UNH’:10**6, ’MYL’:10**6, ’A’: 10**6, ’XLV’: -(5*10**6)}
-    #hold_per is equivalent to 
     def __init__(self, folio_dict):
         self.port= folio_dict
 
